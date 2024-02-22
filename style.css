@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Kotta+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+/*container Principal*/
+main,
+section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  margin-top: -5vh;
+}
+
+/*textos tamanhos e fontes*/
+
+h1 {
+  font-family: Kotta One;
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 1;
+}
+h1 span {
+  font-family: Kalam;
+  font-weight: 400;
+  line-height: 0.2;
+}
+
+h2,
+h3 {
+  font-family: Lora;
+  font-weight: 500;
+  text-align: center;
+}
+/*imagens decorativas*/
+.decor-top {
+  position: absolute;
+  z-index: -1;
+
+  top: 0px;
+  right: 0px;
+
+  width: 70vw;
+  height: auto;
+}
+.decor-bottom {
+  position: absolute;
+  z-index: -1;
+
+  bottom: 0px;
+  left: 0px;
+
+  width: 70vw;
+  height: auto;
+
+  transform: rotate(180deg);
+}
+/*imagem mid*/
+.decor-mid {
+  border: 1px solid black;
+
+  width: 80vw;
+  height: auto;
+
+  border-radius: 500px;
+}
+
+/*media queries*/
+@media (min-width: 26rem) {
+  main,
+  section {
+    margin-top: 0;
+  }
+
+  .decor-top,
+  .decor-bottom {
+    width: 50vw;
+    height: auto;
+  }
+
+  .decor-mid {
+    width: 60vw;
+    height: auto;
+  }
+}
+@media (min-width: 48rem) {
+  .decor-top,
+  .decor-bottom {
+    width: 45vw;
+  }
+  .decor-mid {
+    width: 50vw;
+    border-radius: 20px 20px 20px 20px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .decor-top,
+  .decor-bottom {
+    max-width: 35rem;
+  }
+  .decor-mid {
+    max-width: 35rem;
+  }
+}
