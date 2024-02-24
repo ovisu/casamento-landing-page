@@ -1,116 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Kotta+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Corinthia:wght@400;700&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
   margin: 0px;
-  border: 0px;
   padding: 0px;
 }
-
-img {
-  max-width: 100%;
-}
-/*container Principal*/
 main,
 section {
   width: 100vw;
   height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4vh;
-  margin-top: -5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
-/*textos tamanhos e fontes*/
+img {
+  max-width: 100%;
+}
+.img-dest {
+  object-fit: cover;
+
+  width: auto;
+  height: 45vh;
+}
 
 h1 {
-  font-family: Kotta One;
-  font-size: 1.75rem;
-  text-align: center;
-  line-height: 1;
-}
-h1 span {
-  font-family: Kalam;
-  font-weight: 400;
-  line-height: 0.2;
-}
+  font-family: playfair display;
 
-h2,
-h3 {
-  font-family: Lora;
+  color: #000000;
+
+  font-size: 3rem;
   font-weight: 500;
-  text-align: center;
-}
-/*imagens decorativas*/
-.decor-top {
-  position: absolute;
-  z-index: -1;
-
-  top: 0px;
-  right: 0px;
-
-  width: 70vw;
-  height: auto;
-}
-.decor-bottom {
-  position: absolute;
-  z-index: -1;
-
-  bottom: 0px;
-  left: 0px;
-
-  width: 70vw;
-  height: auto;
-
-  transform: rotate(180deg);
-}
-/*imagem mid*/
-.decor-mid {
-  border: 1px solid black;
-
-  width: 80vw;
-  height: auto;
-
-  border-radius: 500px;
+  line-height: 0.8;
 }
 
-/*media queries*/
-@media (min-width: 26rem) {
-  main,
-  section {
-    margin-top: 0;
-  }
+h1 span {
+  font-family: Alex Brush;
+  font-size: 4rem;
+  font-weight: 400;
 
-  .decor-top,
-  .decor-bottom {
-    width: 50vw;
-    height: auto;
-  }
-
-  .decor-mid {
-    width: 60vw;
-    height: auto;
-  }
-}
-@media (min-width: 48rem) {
-  .decor-top,
-  .decor-bottom {
-    width: 45vw;
-  }
-  .decor-mid {
-    width: 50vw;
-    border-radius: 20px 20px 20px 20px;
-  }
+  text-transform: uppercase;
+  
+  color: #6a5a4a;
 }
 
-@media (min-width: 64rem) {
-  .decor-top,
-  .decor-bottom {
-    max-width: 35rem;
-  }
-  .decor-mid {
-    max-width: 35rem;
-  }
+h2 {
+
+	font-family: Playfair Display;
+	font-weight: 500;
+	font-size: 2rem;
+
+
+}
+
+h2 span {
+
+	font-family: Corinthia;
+	font-size: 2.5rem;
+
+}
+
+p {
+
+	font-family: Inter;
+	text-transform: uppercase;
+	color: #B5A18E;
+	padding: 8px 15px;
+	border: 1px solid #B5A18E;
+	width: 11rem;
+	text-align: center;
+	line-height: 1;
+
 }
