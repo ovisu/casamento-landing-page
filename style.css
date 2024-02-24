@@ -1,28 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Corinthia:wght@400;700&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
-main,
+body {
+  background-color: #fffbf5;
+  overflow-x: hidden;
+}
+
 section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  max-width: 100%;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5vh;
 
+  position: relative;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  position: relative;
+}
+
+section div::before {
+  content: "";
+  height: 1px;
+  width: 11rem;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(106, 90, 74, 0.26);
+  top: -1vh;
 }
 
 img {
   max-width: 100%;
 }
+
 .img-dest {
   object-fit: cover;
 
   width: auto;
-  height: 45vh;
+  height: 40vh;
 }
 
 h1 {
@@ -32,7 +58,7 @@ h1 {
 
   font-size: 3rem;
   font-weight: 500;
-  line-height: 0.8;
+  line-height: 1;
 }
 
 h1 span {
@@ -41,35 +67,49 @@ h1 span {
   font-weight: 400;
 
   text-transform: uppercase;
-  
+
+  vertical-align: bottom;
+  line-height: 0.35;
+
   color: #6a5a4a;
 }
 
 h2 {
-
-	font-family: Playfair Display;
-	font-weight: 500;
-	font-size: 2rem;
-
-
+  font-family: Playfair Display;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 h2 span {
-
-	font-family: Corinthia;
-	font-size: 2.5rem;
-
+  font-family: Corinthia;
+  font-size: 2.5rem;
 }
 
 p {
+  text-align: center;
+  line-height: 1.2;
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #b5a18e;
 
-	font-family: Inter;
-	text-transform: uppercase;
-	color: #B5A18E;
-	padding: 8px 15px;
-	border: 1px solid #B5A18E;
-	width: 11rem;
-	text-align: center;
-	line-height: 1;
+  padding: 10px 10px 8px 10px;
+  border: 1px solid #b5a18e;
+  border-radius: 5px;
+  width: 10rem;
+}
 
+.decor1 {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  left: -5%;
+  bottom: 4vh;
+  transform: rotate(-10deg);
+}
+.decor2 {
+  position: absolute;
+  right: 0;
+  bottom: 30vh;
 }
