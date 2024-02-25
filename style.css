@@ -102,14 +102,15 @@ p {
 
 .decor1 {
   position: absolute;
-  width: 40%;
+
   height: auto;
-  left: -5%;
-  bottom: 4vh;
-  transform: rotate(-10deg);
+  left: 0%;
+  bottom: 0;
 }
 .decor2 {
   position: absolute;
+
+  height: auto;
   right: 0;
   bottom: 30vh;
 }
