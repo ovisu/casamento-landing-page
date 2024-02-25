@@ -184,8 +184,8 @@ p {
     height: 80vh;
     object-position: 50% 30%;
   }
-  h1 {
-    width: auto;
+  h1 br {
+    display: none;
   }
   .decor1 {
     bottom: -25vh;
