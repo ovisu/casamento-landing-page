@@ -110,7 +110,7 @@ p {
 
   height: auto;
   left: 0%;
-  bottom: -5vh;
+  bottom: 0;
 }
 .decor2 {
   position: absolute;
@@ -180,13 +180,23 @@ p {
     width: initial;
     height: initial;
   }
+
+  section div {
+    gap: 8vh;
+  }
+
+  h1 br {
+    display: none;
+  }
+
+  P {
+    width: auto;
+  }
   .img-dest {
     height: 80vh;
     object-position: 50% 30%;
   }
-  h1 br {
-    display: none;
-  }
+
   .decor1 {
     bottom: -25vh;
     width: 20%;
